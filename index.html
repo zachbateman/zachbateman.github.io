@@ -35,19 +35,19 @@
   <body style="margin: 0; overflow: hidden;">
 
     <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      <a-text value="Dallas" look-at="[gps-camera]" scale="120 120 120"></a-text>
+      <a-text value="Dallas" look-at="[gps-camera]" scale="300 300 300"></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
 
-    <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      <a-text value="Austin" look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 30.270; longitude: -97.759;"></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
+    <!-- <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;"> -->
+      <!-- <a-text value="Austin" look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 30.270; longitude: -97.759;"></a-text> -->
+      <!-- <a-camera gps-camera rotation-reader> </a-camera> -->
+    <!-- </a-scene> -->
 
-    <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      <a-text value="Houston" look-at="[gps-camera]" scale="1000000 1000000 1000000" gps-entity-place="latitude: 29.749; longitude: -95.396;"></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
+    <!-- <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;"> -->
+      <!-- <a-text value="Houston" look-at="[gps-camera]" scale="1000000 1000000 1000000" gps-entity-place="latitude: 29.749; longitude: -95.396;"></a-text> -->
+      <!-- <a-camera gps-camera rotation-reader> </a-camera> -->
+    <!-- </a-scene> -->
     
     <script>
       window.onload = () => { navigator.geolocation.getCurrentPosition((position) => {
