@@ -1,17 +1,22 @@
 
 
 
-
-
 <!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
-<!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
-<!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script> -->
-<!-- <body style='margin : 0px; overflow: hidden;'> -->
-	<!-- <a-scene embedded arjs='sourceType: webcam;'> -->
-		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
-		<!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
-	<!-- </a-scene> -->
-<!-- </body> -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<a-box position='0 0.8 0' material='opacity: 0.7;' scale="0.5 0.5 0.5">
+            <a-animation attribute="position" to="0 2.0 0" direction="alternate" dur="4000" repeat="indefinite"></a-animation>
+        </a-box>
+        <a-text value="Hello, AR World!"</a-text>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+
+
+
+
 
 
 <!-- AR.js location example -->
@@ -62,44 +67,44 @@
 
 
 <!-- ar-js-org.github.io/studio test -->
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    </head>
+<!-- <!doctype html> -->
+<!-- <html> -->
+    <!-- <head> -->
+        <!-- <meta charset="utf-8" /> -->
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+        <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+        <!-- <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script> -->
+        <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
+    <!-- </head> -->
 
-    <body style="margin: 0; overflow: hidden;">
+    <!-- <body style="margin: 0; overflow: hidden;"> -->
 
-        <a-scene
-            embedded
-            loading-screen="enabled: false;"
-            arjs="sourceType: webcam; debugUIEnabled: true;">
+        <!-- <a-scene -->
+            <!-- embedded -->
+            <!-- loading-screen="enabled: false;" -->
+            <!-- arjs="sourceType: webcam; debugUIEnabled: true;"> -->
             <!-- arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: true;"> -->
-                <a-image
-                    src="assets/img.png"
-                    look-at="[gps-camera]"
-                    scale="15 15 15"
-                    gps-entity-place="latitude: 35.14319413931993; longitude: -92.85701714324213;"
-                ></a-image>
+                <!-- <a-image -->
+                    <!-- src="assets/img.png" -->
+                    <!-- look-at="[gps-camera]" -->
+                    <!-- scale="15 15 15" -->
+                    <!-- gps-entity-place="latitude: 35.14319413931993; longitude: -92.85701714324213;" -->
+                <!-- ></a-image> -->
 
 
-                <a-image
-                    src="assets/img.png"
-                    look-at="[gps-camera]"
-                    scale="1 1 1"
-                    gps-entity-place="latitude: 35.14207458138023; longitude: -92.85984199109733;"
-                ></a-image>
+                <!-- <a-image -->
+                    <!-- src="assets/img.png" -->
+                    <!-- look-at="[gps-camera]" -->
+                    <!-- scale="1 1 1" -->
+                    <!-- gps-entity-place="latitude: 35.14207458138023; longitude: -92.85984199109733;" -->
+                <!-- ></a-image> -->
 
-                <a-box scale="100 100 100" position="0 500 0" gps-entity-place="longitude: 35.1429; latitude: -92.858;" color="blue;" height="10" width="5"></a-box>
+                <!-- <a-box scale="100 100 100" position="0 500 0" gps-entity-place="longitude: 35.1429; latitude: -92.858;" color="blue;" height="10" width="5"></a-box> -->
 
-            <a-camera gps-camera rotation-reader></a-camera>
+            <!-- <a-camera gps-camera rotation-reader></a-camera> -->
             <!-- <a-camera arjs-look-controls="smoothingFactor: 0.1" gps-camera rotation-reader></a-camera> -->
-        </a-scene>
+        <!-- </a-scene> -->
 
-    </body>
-</html>
+    <!-- </body> -->
+<!-- </html> -->
 
